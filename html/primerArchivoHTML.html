@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Tomibelt Henry</title>
+    <style>table, th, td {border: 1px solid black;}</style>
+</head>
+<body>
+    <img src="./imagenes/logoHenry.png" width="300"/>
+    <!-- IMG sirve para introducir imagenes al html junto con SRC para indicar el direcctorio de la img-->
+    <h2>Primer HTML para ir a Henry</h2>
+    <!-- las etiquetas h sirven para crear titulos y subtitulos -->
+
+    <p>Esta pagina es para poder entrar a Henry, gracias a <span style="color: blue;">HOLA MUNDO</span> <br>
+        que me dijo que lo ponga para probar como se usa HTML</p>
+    <hr>
+    <!-- HR crea separaciones de diferentes secciones con una linea q separa toda la pantalla -->
+    <!-- la etiqueta SPAN sirve para marcar cosas dentro de una linea de texto -->
+    <h3>TEMAS DENTRO DE STUDENTS</h3>
+    <ul>
+        <li> M1. Logica
+            <ol>
+                <li style="list-style-type:lower-alpha;">Linked list</li>
+                <li style="list-style-type:lower-alpha;">Arboles</li>
+                <li style="list-style-type:lower-alpha;">Algoritmos</li>
+            </ol>
+        </li>
+        <br><li>M2. Front End
+            <ol>
+                <li style="list-style-type:lower-alpha;">AJAX</li>
+                <li style="list-style-type:lower-alpha;">React</li>
+                <li style="list-style-type:lower-alpha;">Redux</li>
+            </ol>
+        </li>
+        <br><li>M3. Back End
+            <ol>
+                <li style="list-style-type:lower-alpha;">Node.js</li>
+                <li style="list-style-type:lower-alpha;">PHP</li>
+            </ol>
+        </li>
+        <br><li>M4. Base de Datos</li>
+    </ul>
+    <!-- La etiqueta UL sirve para crear listas no ordenadas -->
+    <!-- Con la etiqueta OL podemos hacer una lista ordenada, value asiga el valor con el q comienza la lista-->
+    <!-- BR genera saltos de linea -->
+    <hr><br>
+
+    <a target="_blank" href="https://www.students.soyhenry.com/">Ir a Students</a>
+    <!-- la etiqueta A sirve para crear hipervinvulos a otras paginas -->
+    <!-- la propiedad target="_blank" nos permite abrir una nueva ventana con la nueva pagina -->
+    <form action="/formulario" method="POST">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Ingrese su email"/>
+        <!-- Value="" genera un valor por defecto en el campo-->
+        <br> <label for="password">Contraseña</label>
+        <input type="password" id="password" name="password" placeholder="Ingrese su clave"/>
+        <!-- Value="" genera un valor por defecto en el campo-->
+        <br> <label for="comentario">Comentario</label>
+        <br> <textarea cols="50" rows="5" placeholder="Ingreser comentario" name="comentario" id="comentario" cols="30" rows="10"></textarea>
+        <!-- textarea no usa Value, simplemente se coloca el valor antes de la etiqueta de cierre -->
+        <!-- textarea crea una caja de comentarios. "Cols" modifica el ancho y "rows" el alto -->
+        <br> <button type="button">Tipo boton</button>
+        <br> <button type="reset">Tipo reset</button>
+        <br> <button type="submit">Tipo submit</button>
+        <!-- button es mas personalisable q una etiquete de tipo input -->
+
+
+        <!-- "Type" sirve para indicar el tipo de dato q se espera recibir (text, password, email, etc)-->
+        <!-- "Id" hace referencia al campo al q nos estamos refiriendo -->
+        <!-- "Name" crea un objeto donde la key es lo q nosotros le pasamos, 
+            y el valor lo q se introduce en el campo -->
+        <!-- "Placeholder" sirve para dar contexto de lo q se espera q el usuario introduzca en el campo -->
+
+    </form>
+
+    <hr>
+    <!-- prueba de las tablas -->
+    <!-- Tr crea una nueva fila, repetir Tr crea mas columnas -->
+    <!-- Th crea las cabeceras de las tablas -->
+    <!-- Td crea el contenido de las celdas -->
+
+    <table style="width: 400px;">
+        <thead>
+            <tr>
+                <th>Producto</th>
+                <th>Precio</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Prep Course</td>
+                <td>$1000</td>
+            </tr>
+            <tr>
+                <td>Bootcamp</td>
+                <td>$1500</td>
+            </tr>
+            <tr>
+                <td>Proyecto individual</td>
+                <td>$2000</td>
+            </tr>
+            <tr>
+                <td>Proyecto Grupal</td>
+                <td>$3000</td>
+            </tr>
+            <tfoot>
+                <td></td>
+                <td>Total: $7500</td>
+            </tfoot>
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,158 @@
+#titulo {
+    color:tomato;
+}
+
+p.texto {
+    color:slateblue
+}
+
+p.especial {
+    color:yellow
+}
+
+div h2, div h3 {
+    color: purple
+}
+
+* {
+    font-size: 24px;
+    /* color: black
+    El selector * no modifica cosas q ya tengan un valor previo, en este caso el color */
+}
+
+.color{
+    /* border: 10px red groove */
+    border-style: solid;    
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 10px;
+}
+
+#fondo {
+   background-color: white;
+   /* opacity le da transparencia a todo el objeto */
+   height: 300px;
+   background: #fff url('cascada.png') no-repeat left / 200px 200px
+   /* background-image: url('cascada.png');
+   background-size: 200px 200px;
+   background-repeat: repeat-x;
+   background-position: center; */
+}
+.margen{
+    background-color: chocolate;
+    margin: 15px ;
+    padding: 30px 25px 15px ;
+    border: solid 5px black;
+    height: 100px;
+    width: 500px;
+    overflow: scroll;
+    outline: 5px solid red;
+}
+.text{
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 3px 3px 3px black;
+}
+
+a:link{ color: darkcyan; }
+a:visited { color: white; }
+a:hover { color: yellow; }
+a:active { color: white; }
+
+/* El selector de estado debe ser siempre en este orden, si quiero usar hover debo usar link y visited antes */
+
+
+.enlace{
+    color: green;
+    background-color: red;
+    border: groove;
+    border-radius: 10px;    
+}
+
+ul {
+    background-color: cyan;
+    list-style-type:circle;
+    /* padding-left: 0px; */
+    list-style-position:inside;
+}
+
+
+
+/* creacion y edicion de tablas */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    border: solid 1px #000;
+    padding: 5px;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #eee;
+}
+
+tr:hover {
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+span { 
+    display: block; 
+    max-width: 300px;
+    background-color: red
+}
+
+.inline { display: inline; }
+/* display:inside hace q dos etiquetas puedan estar en la misma linea. Mientras q display:black fuerza saltos de linea 
+La propiedad display:none los oculta igual q la propiedad visibility: hidden
+Las etiquetas que tienen inside por defecto son span, a y img */
+
+#position {
+    position: relative;
+    left: 20px;
+    /* top: 25px; */
+}
+
+.left {
+    float: left;
+    height: 200px;
+}
+.rigth {
+    float: right;
+}
+
+.column {
+    margin: 0;
+    padding: 0px 15px;
+    width: 33.3%;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
+.center{
+    padding: 50px 0;
+    text-align: center;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+/* .color { color: #000 }
+
+.color { color: rgb(0, 255, 255) }
+
+.color { border: 5px black solid }
+la ultima varialbe hace referencia al estilo q tendra el contorno del objeto. Estos pueden ser:
+dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden
+(bordes con efecto: groove, ridge, inset, outset)
