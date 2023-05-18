@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>HELADERIA</title>
+</head>
+<body>
+    <h1>HELADERIA</h1>
+        <form action="" method="dialog">
+            <fieldset>
+                <legend id="datosClientes">Datos cliente</legend>
+                <label for="nombre">Nombre cliente</label>
+                <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                <br>
+                
+                <label for="telefono">Telefono cliente</label>
+                <input type="tel" id="telefono" placeholder="Ingrese su telefono">
+                <br>
+                
+                <label for="email">Email cliente</label>
+                <input type="email" id="email" placeholder="Ingrese su email">
+                <br>
+                
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend id="crear">Crea tu helado</legend>
+                <h2>Sabor</h2>
+                <input type="radio" id="vainilla" value="vainilla">Vainilla<br>
+                <input type="radio" id="Chocolate" value="Chocolate">Chocolate<br>
+                <input type="radio" id="Frutilla" value="Frutilla">Frutilla<br>
+                
+                <h2>Recipiente</h2>
+                <input type="radio" id="copa" value="copa">Copa<br>
+                <input type="radio" id="taza" value="taza">Taza<br>
+                <input type="radio" id="capelina" value="capelina">Capelina<br>
+
+                <h2>Extra</h2>
+                <input type="checkbox" id="oreo" value="oreo">Oreo<br>
+                <input type="checkbox" id="caramelo" value="caramelo">Caramelo<br>
+                <input type="checkbox" id="bombon" value="bombon">Bombon<br>
+                <br>
+            </fieldset>
+            <br>
+            <button type="reset">Enviar</button>
+        </form>
+</body>
+</html>

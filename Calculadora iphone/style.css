@@ -1,0 +1,52 @@
+head h1 {
+    font-family: 'Roboto', sans-serif;
+}
+
+#app {
+    height: 420px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#app form {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+
+#app input[type=text] {
+    height: 25%;
+    width: 90%;
+    cursor: default;
+    font-family: 'Roboto', sans-serif;
+    background-color: black;
+    color: white;
+    padding: 15px;
+    text-align: right;
+    font-size: 50px;
+    border: 0;
+    outline: none;
+}
+
+#app input[type=button], input[type=reset] {
+    width: 22%;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    color: black;
+    padding: 18px;
+    margin: 3px;
+    border: 0;
+    border-radius: 100%;
+}
+#app .orange {
+    background-color: rgb(253, 149, 3);
+    color: white !important;
+}
+
+#app .gray {
+    background-color: rgb(51,51,51);
+    color: white !important;
+}

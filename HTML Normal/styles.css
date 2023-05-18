@@ -1,0 +1,13 @@
+body{
+    background-color: #efefaa;
+    text-align: center;
+}
+
+legend {
+    font-size: 30px;
+    color: red;
+}
+
+input {
+    cursor: pointer;
+}
