@@ -4,6 +4,24 @@
     El selector * no modifica cosas q ya tengan un valor previo, en este caso el color */
 }
 
+.contenedor {
+    background-color: pink;
+    height: 100px;
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+
+.center {
+    padding: 50px 12px ;
+    text-align: left;
+    width: 200px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
 .color{
     /* border: 10px red groove */
     border-style: solid;    
@@ -17,7 +35,7 @@
    text-align: center;
    /* opacity le da transparencia a todo el objeto */
    height: 300px;
-   background: #fff url('cascada.png') no-repeat center / 200px 200px
+   background: #fff url('cascada.png') no-repeat center / 350px
    /* background-image: url('cascada.png');
    background-size: 200px 200px;
    background-repeat: repeat-x;
@@ -25,14 +43,18 @@
 }
 .margen{
     background-color: chocolate;
-    margin: 15px ;
-    padding: 30px 25px 15px ;
-    border: solid 5px black;
-    height: 100px;
-    width: 500px;
+    margin: 0 auto ;
+    padding: 50px;
+    height: 50px;
+    width: 300px;
     overflow: scroll;
-    outline: 5px solid red;
+    border: 5px solid black;
+    outline: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 .text{
     font-family: 'Kanit', sans-serif;
     text-align: center;
@@ -40,30 +62,41 @@
     text-shadow: 3px 3px 3px black;
 }
 
-a:link{ color: darkcyan; }
-a:visited { color: white; }
-a:hover { color: yellow; }
-a:active { color: white; }
+a:hover { 
+    color: goldenrod;
+    border: 2px solid goldenrod;
+    background-color: white; 
+    transform: 0.3s;
+}
 
 /* El selector de estado debe ser siempre en este orden, si quiero usar hover debo usar link y visited antes */
 
 
 .enlace{
-    color: green;
-    background-color: red;
-    border: groove;
+    color: black;
+    background-color: gold;
+    border: 2px solid black;
     border-radius: 10px;    
     text-align: center;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    padding: 10px;
 }
 
 ul {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    text-align: center;
     background-color: cyan;
-    list-style-type:circle;
-    /* padding-left: 0px; */
+    list-style-type: disc;
     list-style-position:inside;
 }
-
-
 
 /* creacion y edicion de tablas */
 
@@ -112,6 +145,7 @@ img {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 30px;
 }
 
 .column {
@@ -122,14 +156,6 @@ img {
 
 .inline-block{
     display: inline-block;
-}
-
-.center{
-    padding: 50px 0;
-    text-align: center;
-    width: 200px;
-    margin: 0 auto;
-    background-color: aqua;
 }
 
 /* .color { color: #000 }
